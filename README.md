@@ -1,1 +1,1 @@
-This is a place holder for the read me file for Kay
+This is a place holder for the read me file for our project
