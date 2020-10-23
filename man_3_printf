@@ -1,0 +1,18 @@
+.\" Manpage for printf.
+.\" Contact 1689@holbertonschool.com to correct errors or typos.
+.TH man 2 "23 October 2020" "0.32" "holberton man page"
+.SH NAME
+.B printf
+- our very own printf
+.SH SYNOPSIS
+Holberton
+.SH DESCRIPTION
+creating printf that works exactly like printf
+.SH OPTIONS
+B printf takes options (coming soon).
+.SH SEE ALSO
+PRINTF could be programmed to perform complex sequences of operations(2), including loops(2), branches(2), and subroutines(2).
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+William Colindres and Ethan Roberts.
