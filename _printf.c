@@ -21,6 +21,8 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
+			if (switch_case(format[i + 1], list) == -1)
+				return (-1);
 			charnum += switch_case(format[i + 1], list);
 			i += 2;
 		}
