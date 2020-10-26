@@ -1,21 +1,23 @@
-#include <stdlib.h>
-#include <stdargs.h>
-#include <stdio.h>
 #include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
 #include "holberton.h"
 
 /**
  * switch_case - switch cases of specifiers for printf
- *
  * @list: va list
  * @format: format
- * @count: count
+ * Return: 0
  */
 
-void switch_case(char *format, va_list list)
+int switch_case(char format, va_list list)
 {
+	int count = 0;
+	char *ptr;
+	int charnum = 0;
 
-	switch (format[i + 1])
+	switch (format)
 	{
 	case 'c':
 		charnum++;
@@ -33,4 +35,5 @@ void switch_case(char *format, va_list list)
 	default:
 		break;
 	}
+	return (charnum);
 }

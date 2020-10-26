@@ -1,10 +1,11 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
+#include <stdarg.h>
 
 int _printf(const char *format, ...);
 
 int _putchar(char c);
 
-void switch_case(char *format, va_list list);
+int switch_case(char format, va_list list);
 
 #endif
