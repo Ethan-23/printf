@@ -36,6 +36,8 @@ int _printf(const char *format, ...)
 				charnum++;
 				}
 				break;
+			default:
+				break;
 			}
 			i += 2;
 		}
