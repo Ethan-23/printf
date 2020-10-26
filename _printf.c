@@ -17,11 +17,11 @@ int _printf(const char *format, ...)
 	int charnum = 0;
 
 	va_start(list, format);
-	while (format[i] != '\0')
+	for (i = 0; format[i] != '\0'; i++, charnum++)
 	{
 		if (format[i] == '%')
 		{
-			switch(format[i + 1])
+			switch (format[i + 1])
 			{
 			case 'c':
 				charnum++;
@@ -29,12 +29,8 @@ int _printf(const char *format, ...)
 				break;
 			case 's':
 				ptr = va_arg(list, char *);
-				while (ptr[count] != '\0')
-				{
+				for (count = 0; ptr[count] != '\0'; count++, charnum++)
 				_putchar(ptr[count]);
-				count++;
-				charnum++;
-				}
 				break;
 			case '%':
 				charnum++;
@@ -46,10 +42,7 @@ int _printf(const char *format, ...)
 			i += 2;
 		}
 		_putchar(format[i]);
-		i++;
-		charnum++;
 	}
 	va_end(list);
-	charnum--;
-	return (charnum);
+	return (charnum - 1);
 }
