@@ -12,7 +12,7 @@
  * @count: count
  */
 
-void switch_case(va_list list, char *format, int count)
+void switch_case(char *format, va_list list)
 {
 
 	switch (format[i + 1])
