@@ -24,10 +24,10 @@ int _printf(const char *format, ...)
 			switch(format[i + 1])
 			{
 			case 'c':
+				charnum++;
 				_putchar(va_arg(list, int));
 				break;
 			case 's':
-				charnum++;
 				ptr = va_arg(list, char *);
 				while (ptr[count] != '\0')
 				{
@@ -50,5 +50,6 @@ int _printf(const char *format, ...)
 		charnum++;
 	}
 	va_end(list);
-	return (charnum - 2);
+	charnum--;
+	return (charnum);
 }
