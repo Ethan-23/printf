@@ -5,6 +5,6 @@ int _printf(const char *format, ...);
 
 int _putchar(char c);
 
-void switch_case(va_list list, char *format, int count);
+void switch_case(char *format, va_list list);
 
 #endif
