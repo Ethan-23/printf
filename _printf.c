@@ -36,6 +36,10 @@ int _printf(const char *format, ...)
 				charnum++;
 				}
 				break;
+			case '%':
+				charnum++;
+				_putchar('%');
+				break;
 			default:
 				break;
 			}
