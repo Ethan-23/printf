@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 	int charnum = 0;
 
 	if (format == NULL)
-		return(-1);
+		return (-1);
 	va_start(list, format);
 	for (i = 0; format[i] != '\0'; i++, charnum++)
 	{
@@ -31,8 +31,6 @@ int _printf(const char *format, ...)
 				break;
 			case 's':
 				ptr = va_arg(list, char *);
-				if (atoi(format) == 0)
-					exit (1);
 				for (count = 0; ptr[count] != '\0'; count++, charnum++)
 				_putchar(ptr[count]);
 				break;
