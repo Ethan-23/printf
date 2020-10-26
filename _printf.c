@@ -13,6 +13,7 @@ int _printf(const char *format, ...)
 	va_list list;
 	int i = 0;
 	int charnum = 0;
+	int test = 0;
 
 	if (format == NULL)
 		return (-1);
@@ -21,12 +22,13 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-/*			if (switch_case(format[i + 1], list) == 1)
-			return (-1);*/
-			charnum += switch_case(format[i + 1], list);
+			test = switch_case(format[i + 1], list);
+			charnum += test;
+			if (test <= 0)
+				return (-1);
 			i += 2;
 		}
-		_putchar(format[i]);
+			_putchar(format[i]);
 	}
 	va_end(list);
 	return (charnum);
