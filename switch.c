@@ -33,6 +33,7 @@ int switch_case(char format, va_list list)
 		_putchar('%');
 		break;
 	default:
+		return (-1);
 		break;
 	}
 	return (charnum);
