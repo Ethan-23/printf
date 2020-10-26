@@ -31,8 +31,8 @@ int _printf(const char *format, ...)
 				break;
 			case 's':
 				ptr = va_arg(list, char *);
-				if (atoi(ptr) != 0 && ptr != 0)
-					return (-1);
+				if (atoi(format) == 0)
+					exit (1);
 				for (count = 0; ptr[count] != '\0'; count++, charnum++)
 				_putchar(ptr[count]);
 				break;
