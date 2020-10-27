@@ -12,17 +12,16 @@
 
 int binary_calc(va_list list)
 {
-	int binary[] = {4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1};
-	int test = va_arg(list, int);
-	int i;
-	int charnum = 0;
-	int swit = 0;
+	int test = va_arg(list, int), charnum = 0, swit = 0, count = 0;
 
-	for (i = 0; i != 13; i++)
+	for (count = 1; count * 2 <= test; count *= 2)
 	{
-		if (test - binary[i] >= 0)
+	}
+	for (; count > 1; count /= 2)
+	{
+		if (test - count >= 0)
 		{
-			test -= binary[i];
+			test -= count;
 			_putchar('1');
 			charnum++;
 			swit = 1;
@@ -36,5 +35,7 @@ int binary_calc(va_list list)
 			}
 		}
 	}
+	_putchar('0');
+	charnum++;
 	return (charnum);
 }
