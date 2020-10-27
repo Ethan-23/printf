@@ -13,7 +13,7 @@
 
 int switch_case(char format, va_list list)
 {
-	int count = 0, pow = 1, charnum = 0, number = 0, hold = 0;
+	int count = 0, charnum = 0;
 	char *ptr;
 
 	switch (format)
@@ -28,21 +28,7 @@ int switch_case(char format, va_list list)
 			_putchar(ptr[count]);
 		break;
 	case 'd': case 'i':
-		number = va_arg(list, int);
-		hold = number;
-		for (count = 0; number > 10; count++, number = number / 10)
-		{
-		}
-		for (; count > 0; charnum++, count--)
-		{
-			for (pow = 1, number = count; number > 0; number--, pow = pow * 10)
-			{
-			}
-			_putchar((hold / pow) + '0');
-			hold = hold % pow;
-		}
-		_putchar((hold % 10) + '0');
-		charnum++;
+		charnum += calc_fun(list);
 		break;
 	case '%':
 		charnum++;

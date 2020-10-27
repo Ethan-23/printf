@@ -8,4 +8,5 @@ int _putchar(char c);
 
 int switch_case(char format, va_list list);
 
+int calc_fun(va_list list);
 #endif
