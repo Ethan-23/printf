@@ -17,8 +17,6 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-	if (format[1] != '\"')
-		return (-1);
 	va_start(list, format);
 	for (i = 0; format[i] != '\0'; charnum++, i++)
 	{
@@ -27,7 +25,7 @@ int _printf(const char *format, ...)
 			test = switch_case(format[i + 1], list);
 			charnum += test;
 			if (test <= 0)
-				return (-1);
+				exit(-1);
 			i += 2;
 		}
 			_putchar(format[i]);
