@@ -1,18 +1,33 @@
-.\" Manpage for printf.
+.\" Manpage for _printf.
 .\" Contact 1689@holbertonschool.com to correct errors or typos.
-.TH man 2 "23 October 2020" "0.32" "holberton man page"
+.TH man 3 "23 October 2020" "0.32" "User Command Page"
 .SH NAME
-.B printf
-- our very own printf
+.B _printf
+- Produces output according to a format.
 .SH SYNOPSIS
-Holberton
+.B int _printf(const char *format, ...);
 .SH DESCRIPTION
-creating printf that works exactly like printf
+C function that prints the format of inputs and variables.
 .SH OPTIONS
-B printf takes options (coming soon).
-.SH SEE ALSO
-PRINTF could be programmed to perform complex sequences of operations(2), including loops(2), branches(2), and subroutines(2).
+.nf
+.B %c
+prints a character
+.B %s
+prints a string
+.B %%
+prints a module
+.B %d and %i
+prints a integer
+.SH RETURN VALUE
+the number of characters printed (excluding the null byte used to end output to strings).
+.SH EXAMPLES
+.nf
+_printf("%s", "This is an example of _printf"); # returns a string
+_printf("%c", 'C'); # returns a character
+_printf("%%"); # returns a '%'
+_printf("%d", 10); # returns a integer
+_printf("%i", 20); # returns a integer
 .SH BUGS
-No known bugs.
+Contact 1689@holbertonschool.com to correct errors or typos.
 .SH AUTHOR
 William Colindres and Ethan Roberts.
