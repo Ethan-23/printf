@@ -5,9 +5,8 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
+ * calc_fun - calculator function for d
+ * @list: list of givens
  * Return: 0
  */
 
@@ -20,8 +19,13 @@ int calc_fun(va_list list)
 	int number = 0;
 
 	number = va_arg(list, int);
+	if (number < 0)
+	{
+		_putchar('-');
+		number *= -1;
+	}
 	hold = number;
-	for (count = 0; number > 10; count++, number = number / 10)
+	for (count = 0; number >= 10; count++, number = number / 10)
 	{}
 	for (; count > 0; charnum++, count--)
 	{
