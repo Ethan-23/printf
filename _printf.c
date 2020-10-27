@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 	int charnum = 0;
 	int test = 0;
 
-	if (format == NULL)
+	if (format == NULL || format[0] == '\0')
 		return (-1);
 	va_start(list, format);
 	for (i = 0; format[i] != '\0'; charnum++, i++)
