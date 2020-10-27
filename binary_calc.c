@@ -18,7 +18,7 @@ int binary_calc(va_list list)
 	int charnum = 0;
 	int swit = 0;
 
-	for (i = 0; i != 14; i++)
+	for (i = 0; i != 13; i++)
 	{
 		if (test - binary[i] >= 0)
 		{
