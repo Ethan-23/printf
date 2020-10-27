@@ -25,7 +25,7 @@ int calc_fun(va_list list)
 		number *= -1;
 	}
 	hold = number;
-	for (count = 0; number > 10; count++, number = number / 10)
+	for (count = 0; number >= 10; count++, number = number / 10)
 	{}
 	for (; count > 0; charnum++, count--)
 	{
