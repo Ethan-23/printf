@@ -31,5 +31,6 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 	}
 	va_end(list);
+	printf("%d\n", charnum);
 	return (charnum);
 }
