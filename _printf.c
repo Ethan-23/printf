@@ -31,5 +31,5 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 	}
 	va_end(list);
-	return (charnum);
+	return (charnum - 1);
 }
