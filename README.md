@@ -1,6 +1,6 @@
 # _printf
 
-**Descrition**\
+**Description:**\
 _printf is a C function that prints the format of inputs and variables.
 
 ## Usage
