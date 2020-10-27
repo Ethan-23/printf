@@ -49,6 +49,9 @@ int switch_case(char format, va_list list)
 		charnum++;
 		_putchar('%');
 		break;
+	case 'b':
+		charnum += binary_calc(list);
+		break;
 	default:
 		break;
 	}
