@@ -24,6 +24,17 @@ int switch_case(char format, va_list list)
 		break;
 	case 's':
 		ptr = va_arg(list, char *);
+		if (ptr == NULL)
+		{
+			_putchar('(');
+			_putchar('N');
+			_putchar('U');
+			_putchar('L');
+			_putchar('L');
+			_putchar(')');
+			charnum += 6;
+			return (charnum);
+		}
 		for (count = 0; ptr[count] != '\0'; count++, charnum++)
 			_putchar(ptr[count]);
 		break;
