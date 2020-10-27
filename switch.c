@@ -27,10 +27,10 @@ int switch_case(char format, va_list list)
 		if (ptr == NULL)
 		{
 			_putchar('(');
-			_putchar('N');
-			_putchar('U');
-			_putchar('L');
-			_putchar('L');
+			_putchar('n');
+			_putchar('u');
+			_putchar('l');
+			_putchar('l');
 			_putchar(')');
 			charnum += 6;
 			return (charnum);
