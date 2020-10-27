@@ -14,15 +14,12 @@
 int switch_case(char format, va_list list)
 {
 	int count = 0, charnum = 0;
-	char *ptr;
-	char test;
+	char *ptr, test;
 
 	switch (format)
 	{
 	case 'c':
 		test = va_arg(list, int);
-		if (test == '\0')
-			return (-1);
 		charnum++;
 		_putchar(test);
 		break;
