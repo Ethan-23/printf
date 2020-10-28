@@ -10,6 +10,7 @@
 * %s - prints a string
 * %% - prints a module
 * %d and %i - prints a integer
+* %b - prints an integer in binary format
 
 ## Examples
 
