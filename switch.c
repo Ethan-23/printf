@@ -71,5 +71,5 @@ int switch_case(char format, va_list list)
 	default:
 		break;
 	}
-	return (charnum);
+	return (charnum - 1);
 }
