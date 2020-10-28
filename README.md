@@ -22,4 +22,5 @@ _printf("%%"); # returns a '%'
 _printf("%d", 10); # returns a integer
 _printf("%i", 20); # returns a integer
 _printf("%b", 1234); # returns '1234' into binary format
+_printf("%r", "This string is printed in reverse"); # returns the reversed string
 ```
