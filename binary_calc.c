@@ -13,9 +13,8 @@
 unsigned int binary_calc(va_list list)
 {
 	int test = va_arg(list, int), charnum = 0, swit = 0, count = 0;
-
-	if (test < 1)
-		return (-1);
+	if (test == 0)
+		_putchar('0');
 /* loop to find the biggest binary number to fit in given number*/
 	for (count = 1; count * 2 <= test; count *= 2)
 	{
