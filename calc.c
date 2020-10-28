@@ -22,6 +22,7 @@ int calc_fun(va_list list)
 	if (number < 0)
 	{
 		_putchar('-');
+		charnum++;
 		number *= -1;
 	}
 	hold = number;
