@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	va_start(list, format);
 /* for loop to go through characters */
-	for (i = 0; format[i] != '\0'; charnum++, i++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 /* checks if there is a % in the format */
 		if (format[i] == '%')
@@ -34,6 +34,7 @@ int _printf(const char *format, ...)
 			i += 2;
 		}
 			_putchar(format[i]);
+			charnum++;
 	}
 	va_end(list);
 	return (charnum);
