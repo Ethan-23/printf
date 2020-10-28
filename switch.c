@@ -65,7 +65,7 @@ int switch_case(char format, va_list list)
 	case 'b':
 		charnum += binary_calc(list);
 		break;
-	case 'R':
+	case 'r':
 		charnum += print_rev(list);
 		break;
 	default:
