@@ -2,7 +2,7 @@
 
 ## Description
 
-**_printf is a C function that prints the format of inputs and variables.**
+**_printf is a C function that prints the format of inputs and variables. Accepts conversation with specifications formats.**
 
 ## Usage
 
