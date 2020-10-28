@@ -5,6 +5,8 @@
 .B _printf
 - Produces output according to a format.
 .SH SYNOPSIS
+.nf
+.B #include "holberton.h"
 .B int _printf(const char *format, ...);
 .SH DESCRIPTION
 C function that prints the format of inputs and variables. Accepts conversation with specifications formats.
