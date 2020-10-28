@@ -20,5 +20,7 @@ int print_rev(va_list list)
 		charnum++;
 	for (; count >= 0; count--)
 		_putchar(hold[count]);
+
+	_putchar(hold[count] + 1);
 	return (charnum);
 }
