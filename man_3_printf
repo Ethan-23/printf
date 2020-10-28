@@ -20,6 +20,8 @@ prints a module
 prints an integer
 .B %b
 prints an integer in binary format
+.B %r
+prints the string in reverse
 .SH RETURN VALUE
 the number of characters printed (excluding the null byte used to end output to strings).
 .SH EXAMPLES
