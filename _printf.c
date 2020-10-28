@@ -31,6 +31,8 @@ int _printf(const char *format, ...)
 /* switch case returns the charnum and if it is 0 the program exits */
 			if (test <= 0)
 				exit(-1);
+			if (format[i + 2] == '\0')
+				return (charnum);
 			i += 2;
 		}
 			_putchar(format[i]);
