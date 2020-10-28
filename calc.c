@@ -19,6 +19,11 @@ int calc_fun(va_list list)
 	int number = 0;
 
 	number = va_arg(list, int);
+	if (number == 0)
+	{
+		_purchar('0');
+		charnum++;
+	}
 	if (number < 0)
 	{
 		_putchar('-');
