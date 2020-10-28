@@ -14,7 +14,7 @@ int binary_calc(va_list list)
 {
 	int test = va_arg(list, int), charnum = 0, swit = 0, count = 0;
 
-	if (test < 0)
+	if (test < 1)
 		return (-1);
 	for (count = 1; count * 2 <= test; count *= 2)
 	{
