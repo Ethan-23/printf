@@ -10,7 +10,7 @@
  * Return: charnum
  */
 
-int binary_calc(va_list list)
+unsigned int binary_calc(va_list list)
 {
 	int test = va_arg(list, int), charnum = 0, swit = 0, count = 0;
 
@@ -32,8 +32,8 @@ int binary_calc(va_list list)
 		{
 			if (swit == 1)
 			{
-			_putchar('0');
-			charnum++;
+				_putchar('0');
+				charnum++;
 			}
 		}
 	}
