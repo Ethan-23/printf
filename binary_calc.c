@@ -19,7 +19,7 @@ int binary_calc(va_list list)
 	for (count = 1; count * 2 <= test; count *= 2)
 	{
 	}
-	for (; count > 1; count /= 2)
+	for (; count >= 1; count /= 2)
 	{
 		if (test - count >= 0)
 		{
@@ -37,7 +37,5 @@ int binary_calc(va_list list)
 			}
 		}
 	}
-	_putchar('0');
-	charnum++;
 	return (charnum);
 }
