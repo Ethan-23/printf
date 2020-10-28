@@ -7,7 +7,7 @@
 .SH SYNOPSIS
 .B int _printf(const char *format, ...);
 .SH DESCRIPTION
-C function that prints the format of inputs and variables.
+C function that prints the format of inputs and variables. Accepts conversation with specifications formats.
 .SH OPTIONS
 .nf
 .B %c
