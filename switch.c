@@ -5,6 +5,27 @@
 #include "holberton.h"
 
 /**
+ * pnull - print null
+ *
+ * Return: 0
+ */
+void pnull(void)
+{
+	_putchar('(');
+	_putchar('n');
+	_putchar('u');
+	_putchar('l');
+	_putchar('l');
+	_putchar(')');
+}
+
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include "holberton.h"
+
+/**
  * switch_case - switch cases of specifiers for printf
  * @list: va list
  * @format: format
@@ -27,12 +48,7 @@ int switch_case(char format, va_list list)
 		ptr = va_arg(list, char *);
 		if (ptr == NULL)
 		{
-			_putchar('(');
-			_putchar('n');
-			_putchar('u');
-			_putchar('l');
-			_putchar('l');
-			_putchar(')');
+			pnull();
 			charnum += 6;
 			return (charnum);
 		}
@@ -48,6 +64,9 @@ int switch_case(char format, va_list list)
 		break;
 	case 'b':
 		charnum += binary_calc(list);
+		break;
+	case 'R':
+		charnum += print_rev(list);
 		break;
 	default:
 		break;
