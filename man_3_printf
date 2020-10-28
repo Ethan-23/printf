@@ -17,7 +17,9 @@ prints a string
 .B %%
 prints a module
 .B %d and %i
-prints a integer
+prints an integer
+.B %b
+prints an integer in binary format
 .SH RETURN VALUE
 the number of characters printed (excluding the null byte used to end output to strings).
 .SH EXAMPLES
