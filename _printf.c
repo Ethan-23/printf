@@ -29,14 +29,19 @@ int _printf(const char *format, ...)
 			test = switch_case(format[i + 1], list);
 			charnum += test;
 /* switch case returns the charnum and if it is 0 the program exits */
-			if (test <= 0)
+			if (test == -10)
 				exit(-1);
 			if (format[i + 2] == '\0')
 				return (charnum);
 			i += 2;
 		}
+		if (format[i] != '%')
+		{
 			_putchar(format[i]);
 			charnum++;
+		}
+		else
+			i--;
 	}
 	va_end(list);
 	return (charnum);
