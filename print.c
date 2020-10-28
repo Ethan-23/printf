@@ -5,7 +5,7 @@
 #include "holberton.h"
 
 /**
- * print_rev - prints string in rev
+ * print_rev - function that takes a string and prints it in reverse
  * @list: given string
  * Return: Char number
  */
