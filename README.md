@@ -11,6 +11,7 @@
 * %% - prints a module
 * %d and %i - prints a integer
 * %b - prints an integer in binary format
+* %r - prints the string in reverse
 
 ## Examples
 
